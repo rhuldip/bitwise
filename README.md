@@ -14,5 +14,7 @@ Topics one must know
 - [Dividing number by power of 2](#dividing-number-by-power-of-2)
 - [Finding modulo of a given number](#finding-modulo-of-given-number)
 - [Reversing a binary number](#reversing-a-binary-number)
+- [Extract odd and even bit numbers]
+- [Swap all odd and even bits]
 - [Counting number of set bits in a number](#counting-number-of-set-bits-in-a-number)
 - [Peforming average without division](#performing-average-without-divison)
