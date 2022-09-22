@@ -34,3 +34,50 @@ Y   0  1  0  1
 R   0  0  0  1
 ---------------
 ```
+
+#### OR Operator
+```
+X   0  0  1  1
+Y   0  1  0  1
+---------------
+R   0  1  1  1
+---------------
+```
+
+#### XOR Operator
+Same bit results 0.
+Different bits results to 1.
+To remember - XOR operator is used to find the element in an array having pairs except one number which is only once. Since, each pair will result 0 using XOR.
+```
+X   0  0  1  1
+Y   0  1  0  1
+---------------
+R   0  1  1  0
+---------------
+```
+#### Complement Operator
+```
+X   0  1
+---------
+R   1  0
+---------
+```
+#### Left Shift Operator
+```
+m = 19
+m = 10011
+m << 1 = 10011 = 38
+n = 21
+n = 10101
+n << 2 = 1010100 = 84
+```
+#### Right Shift Operator
+```
+
+m = 19
+m = 10011
+m >> 1 = 1001 = 9
+n = 21
+n = 10101
+n >> 2 = 101 = 5
+```
