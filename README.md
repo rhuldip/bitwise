@@ -2,6 +2,12 @@
 Topics one must know
 =====================
 - [Bitwise Operators](#bitwise-operators)
+    - [AND Operator](#and-operator)
+    - [OR Operator](#or-operator)
+    - [XOR Operator](#xor-operator)
+    - [Complement Operator](#complement-operator)
+    - [Left Shift Operator](#left-shift-operator)
+    - [Right Shift Operator](#right-shift-operator)
 - [Check if Kth bit is set or not](#check-if-kth-bit-is-set-or-not)
 - [Set Kth bit](#set-kth-bit)
 - [clear Kth bit](#clear-kth-bit)
@@ -18,3 +24,13 @@ Topics one must know
 - [Swap all odd and even bits]
 - [Counting number of set bits in a number](#counting-number-of-set-bits-in-a-number)
 - [Peforming average without division](#performing-average-without-divison)
+
+### Bitwise Operators
+#### AND Operator
+```
+X   0  0  1  1
+Y   0  1  0  1
+---------------
+R   0  0  0  1
+---------------
+```
