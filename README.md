@@ -10,6 +10,7 @@ Topics one must know
     - [Right Shift Operator](#right-shift-operator)
 - [Basic Problems](#basic-problems)
     - [Check if Kth bit is set or not](#check-if-kth-bit-is-set-or-not)
+        - [Check if a number is odd or even](#check-if-a-number-is-odd-or-even)
     - [Set Kth bit](#set-kth-bit)
     - [clear Kth bit](#clear-kth-bit)
 - [Toggle Kth bit](#toggle-kth-bit)
@@ -82,3 +83,17 @@ n = 21
 n = 10101
 n >> 2 = 101 = 5
 ```
+### Basic Problems
+#### Check if Kth bit is set or not
+```
+n = 75
+k = 4   // It means we need to check if kth bit is set or not
+int res = (n & (1 << (k-1)))
+if(res == 0)
+    Sop("Kth bit is 1")
+else
+    Sop("Kth bit is 0")
+```
+##### Check if a number is odd or even
+**FACT** A number can be odd only if its first bit is one.
+So to check if a number is odd or even we need to check if the 0th bit is set or not
