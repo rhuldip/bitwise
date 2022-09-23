@@ -13,10 +13,9 @@ Topics one must know
         - [Check if a number is odd or even](#check-if-a-number-is-odd-or-even)
     - [Set Kth bit](#set-kth-bit)
     - [clear Kth bit](#clear-kth-bit)
-- [Toggle Kth bit](#toggle-kth-bit)
-- [Toggle right most set bit](#toggle-right-most-set-bit)
-- [Capture position of right most set bit](#capture-position-of-right-most-set-bit)
-- [Capture position of right most unset bit](#capture-position-of-right-most-unset-bit)
+    - [Toggle Kth bit](#toggle-kth-bit)
+    - [Capture position of right most set bit](#capture-position-of-right-most-set-bit)
+    - [Capture position of right most unset bit](#capture-position-of-right-most-unset-bit)
 - [Check if number is power of 2](#check-if-number-is-power-of-2)
 - [Multiplying number by power of 2](#multiplying-number-by-power-of-2)
 - [Dividing number by power of 2](#dividing-number-by-power-of-2)
@@ -75,7 +74,6 @@ n << 2 = 1010100 = 84
 ```
 #### Right Shift Operator
 ```
-
 m = 19
 m = 10011
 m >> 1 = 1001 = 9
@@ -113,4 +111,32 @@ n = 75 = 0100 1011
 k = 3   // It means we need to set the 3rd bit
 int res = (n | (1 << k-1))
 // res = 79 = 0100 1111
+```
+#### clear Kth bit
+```
+n = 75 = 0100 1011
+k = 4   // It means we need to clear the 4th bit
+int res = n & (~(1 << k-1))
+// res = 67 = 0100 0011
+```
+#### Toggle Kth bit
+```
+n = 75 = 0100 1011
+k = 4   // It means we need to toggle the 4th bit
+int res = n ^ (1 << k-1)
+// res = 67 = 0100 0011
+```
+#### Capture position of right most set bit
+```
+n = 72 = 0100 1000
+int res = n & -n;
+// res = 8 = 1000 
+// the 1 tells the ocation where we first encounter 1
+```
+#### Capture position of right most unset bit
+```
+n = 239 = 1110 1111
+int res = ~n & (n+1);
+// res = 16 = 10000
+// the 1 tells the location where we first encounter 0
 ```
