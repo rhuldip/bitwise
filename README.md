@@ -86,8 +86,8 @@ n >> 2 = 101 = 5
 ### Basic Problems
 #### Check if Kth bit is set or not
 ```
-n = 75
-k = 4   // It means we need to check if kth bit is set or not
+n = 75 = 0100 1011
+k = 4   // It means we need to check if 4th bit is set or not
 int res = (n & (1 << (k-1)))
 if(res == 0)
     Sop("Kth bit is 1")
@@ -95,5 +95,22 @@ else
     Sop("Kth bit is 0")
 ```
 ##### Check if a number is odd or even
-**FACT** A number can be odd only if its first bit is one.
+**FACT:** A number can be odd only if its first bit is one.
 So to check if a number is odd or even we need to check if the 0th bit is set or not
+```
+n1 = 1 = 0001
+n2 = 3 = 0011
+n3 = 5 = 0101
+n4 = 7 = 0111
+if((n1 & 1) == 0)
+    Sop("n1 is even")
+else
+    Sop("n1 is odd")
+``` 
+#### Set Kth bit
+```
+n = 75 = 0100 1011
+k = 3   // It means we need to set the 3rd bit
+int res = (n | (1 << k-1))
+// res = 79 = 0100 1111
+```
