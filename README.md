@@ -16,7 +16,8 @@ Topics one must know
     - [Toggle Kth bit](#toggle-kth-bit)
     - [Capture position of right most set bit](#capture-position-of-right-most-set-bit)
     - [Capture position of right most unset bit](#capture-position-of-right-most-unset-bit)
-- [Check if number is power of 2](#check-if-number-is-power-of-2)
+    - [Count number of set bits in a number](#count-number-of-set-bits-in-a-number)
+        - [Check if number is power of 2](#check-if-number-is-power-of-2)
 - [Multiplying number by power of 2](#multiplying-number-by-power-of-2)
 - [Dividing number by power of 2](#dividing-number-by-power-of-2)
 - [Finding modulo of a given number](#finding-modulo-of-given-number)
@@ -139,4 +140,15 @@ n = 239 = 1110 1111
 int res = ~n & (n+1);
 // res = 16 = 10000
 // the 1 tells the location where we first encounter 0
+```
+#### Count number of set bits in a number
+**Memorize It**
+```
+int n = 239 = 1110 1111
+int count = 0;
+while(n != 0){
+    n &= (n-1);
+    count++;
+}
+// count = 7
 ```
