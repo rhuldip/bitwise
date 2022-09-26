@@ -152,3 +152,15 @@ while(n != 0){
 }
 // count = 7
 ```
+##### Check if number is power of 2
+A number will be power of 2 only if it has only one bit as set.
+For example - 
+2^0 = 1 = 0001
+2^1 = 2 = 0010
+2^2 = 4 = 0100
+2^3 = 8 = 1000
+2^10 = 1024  = 0100 0000 0000
+2^15 = 32768 = 1000 0000 0000 0000
+There are 2 ways to solve it - 
+* Counting the number of set bits in the number and verify its only one
+* (n & (n-1)) should result to 0.
