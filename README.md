@@ -5,6 +5,7 @@ Topics one must know
     - [AND Operator](#and-operator)
     - [OR Operator](#or-operator)
     - [XOR Operator](#xor-operator)
+        - [Find the element which appear only once in an array containing all other elements twice](#find-the-element-which-appear-only-once-in-an array-containing-all-other-elements-twice)
     - [Complement Operator](#complement-operator)
     - [Left Shift Operator](#left-shift-operator)
     - [Right Shift Operator](#right-shift-operator)
@@ -56,6 +57,18 @@ Y   0  1  0  1
 ---------------
 R   0  1  1  0
 ---------------
+```
+##### Find the element which appear only once in an array containing all other elements twice
+XOR of duplicate elements result in 0
+```
+class Solution {
+    public int singleNumber(int[] nums) {
+        int res = 0;
+        for(int i=0; i<nums.length;i++)
+            res ^= nums[i];
+        return res;
+    }
+}
 ```
 #### Complement Operator
 ```
