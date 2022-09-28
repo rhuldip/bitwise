@@ -19,14 +19,11 @@ Topics one must know
     - [Capture position of right most unset bit](#capture-position-of-right-most-unset-bit)
     - [Count number of set bits in a number](#count-number-of-set-bits-in-a-number)
         - [Check if number is power of 2](#check-if-number-is-power-of-2)
-- [Multiplying number by power of 2](#multiplying-number-by-power-of-2)
-- [Dividing number by power of 2](#dividing-number-by-power-of-2)
-- [Finding modulo of a given number](#finding-modulo-of-given-number)
-- [Reversing a binary number](#reversing-a-binary-number)
-- [Extract odd and even bit numbers]
-- [Swap all odd and even bits]
-- [Counting number of set bits in a number](#counting-number-of-set-bits-in-a-number)
-- [Peforming average without division](#performing-average-without-divison)
+    - [Multiplying number by power of 2](#multiplying-number-by-power-of-2)
+    - [Dividing number by power of 2](#dividing-number-by-power-of-2)
+ - [Complex Problems](#complex-problems)
+    - [Hamming Distance](#hamming-distance)
+    - 
 
 ### Bitwise Operators
 #### AND Operator
@@ -177,3 +174,20 @@ For example -
 There are 2 ways to solve it - 
 * Counting the number of set bits in the number and verify its only one
 * (n & (n-1)) should result to 0.
+
+### Complex Problems
+#### Hamming Distance
+The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
+```
+class Solution {
+    public int hammingDistance(int x, int y) {
+        int xor = x ^ y;
+        int res = 0;
+        while(xor != 0){
+            res += xor & 1;
+            xor = xor >> 1;
+        }
+        return res;
+    }
+}
+```
