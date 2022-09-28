@@ -5,7 +5,7 @@ Topics one must know
     - [AND Operator](#and-operator)
     - [OR Operator](#or-operator)
     - [XOR Operator](#xor-operator)
-        - [Find the element which appear only once in an array containing all other elements twice](#find-the-element)
+        - [Find the element which appear only once in an array containing all other elements twice](#find-the-element-which-appear-only-once-in-an-array-containing-all-other-elements-twice)
     - [Complement Operator](#complement-operator)
     - [Left Shift Operator](#left-shift-operator)
     - [Right Shift Operator](#right-shift-operator)
