@@ -140,7 +140,7 @@ int res = n ^ (1 << k-1)
 #### Capture position of right most set bit
 ```
 n = 72 = 0100 1000
-int res = n & -n;
+int res = n & ~n;
 // res = 8 = 1000 
 // the 1 tells the ocation where we first encounter 1
 ```
