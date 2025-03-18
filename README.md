@@ -191,3 +191,9 @@ class Solution {
     }
 }
 ```
+#### Divide a number by 2
+int num = 20; // 10100
+int numAfterDivisionByTwo = num >> 1; // 10 that is 1010
+#### Divide a number by 2^n
+int num = 32; // 100000
+int numAfterDivisionByEight = num >> 3; // 8 that is 1000
